@@ -2,7 +2,44 @@
 !!! XML
 %html
   %head
-    %title listrophy on GitHub
+    %title listrophy on github
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/site.css'}
   %body
-    %h1 Welcome!
-    %p nothing here yet. :(
+    %h1
+      &rarr;
+      %a{:href => 'http://github.com/listrophy'} listrophy
+      &larr;
+    %h2 mine
+    %dl
+      %dt
+        %a{:href => 'http://github.com/listrophy/dgg'} dgg
+      %dd A keyword filter for digg
+      %dt
+        %a{:href => 'http://github.com/madrailers/story126'} story126
+      %dd A twitter app for telling stories
+    %h2 others' (that i like)
+    %dl
+      %dt
+        %a{:href => 'http://github.com/nex3/haml'} haml
+      %dd better than erb. waaaay better than erb
+      %dt
+        %a{:href => 'http://github.com/dchelimsky/rspec'} rspec
+      %dd behavior driven development framework
+      %dt
+        %a{:href => 'http://github.com/aslakhellesoy/cucumber'} cucumber
+      %dd drive development with english
+      %dt
+        %a{:href => 'http://github.com/bendycode/annotate_models'} annotate_models
+      %dd decorate your models with your db schema
+      %dt
+        %a{:href => 'http://github.com/bendycode/tracker-git-hook'} tracker-git-hook
+      %dd update pivotal tracker with your git commit messages
+    %a{:href => 'http://github.com/listrophy'}
+      %img#ribbon{:src =>'http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png', :alt =>'Fork me on GitHub'}
+    #footer
+      &copy;2009 Bradley Grzesiak. Some rights reserved.
+      %br/
+      This
+      %span{"xmlns:dc" => "http://purl.org/dc/elements/1.1/", :href => "http://purl.org/dc/dcmitype/Text", :rel => 'dc:type'}work
+      is licensed under a
+      %a{:rel => 'license', :href => 'http://creativecommons.org/licenses/by-sa/3.0/us/'}Creative Commons Attribution-Share Alike 3.0 United States License

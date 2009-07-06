@@ -9,9 +9,13 @@ CSSDIR = 'stylesheets'
 HTML = HAML.collect { |fn| File.join(HTMLDIR, File.basename(fn).ext('html'))}
 CSS = SASS.collect { |fn| File.join(CSSDIR, File.basename(fn).ext('css'))}
 
+desc "Run haml and sass on all files"
 task :default => [:sass, :haml]
 
+desc "Run haml"
 task :haml => [HTML]
+
+desc "Run sass"
 task :sass => [CSS]
 
 task ''

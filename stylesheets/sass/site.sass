@@ -1,2 +1,87 @@
+!font = #121621
+!back = #FFFFFF
+!mid = #515154
+!attn = #F34607
+=highlight
+  :style solid
+  :width 4px
+  :color= !attn
+
+html
+  :background
+    :color= !mid
+  :margin 0
+  :padding 0
 body
-  :margin-top 2em
+  :margin
+    :top 0
+    :left auto
+    :right auto
+  :padding
+    :top 0
+  :width 60%
+  :color= !font
+  :background
+    :color= !back
+
+a
+  :color= !font * 3
+  :text-decoration none
+  :font-weight bold
+h1
+  :text-align center
+  :font-size 3em
+  :color= !attn
+  :margin
+    :top 0
+    :bottom 0
+  :padding
+    :top 1em
+h2
+  :clear both
+  :float right
+  :padding 5px 5px 1px 20px
+  :color= !back
+  :background
+    :color= !mid
+  :border
+    :left
+      +highlight
+    :bottom
+      +highlight
+dl
+  :clear both
+  :font
+    :size 1.5em
+dt
+  :clear left
+  :float left
+  :width 40%
+  :text-align right
+  :display inline
+  :margin .25em 0 .25em 0
+  a
+    :padding
+      :right .8em
+    :border
+      :right
+        +highlight
+        :width 2px
+dd
+  :display inline
+  :float left
+  :width 56%
+  :text-align left
+  :margin .25em 0 .25em 1em
+#ribbon
+  :position absolute
+  :top 0
+  :right 0
+img
+  :border 0
+#footer
+  :clear both
+  :text-align center
+  :font-size .8em
+  :padding
+    :top 2em
