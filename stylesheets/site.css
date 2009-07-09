@@ -63,15 +63,13 @@ dd {
   text-align: left;
   margin: .25em 0 .25em 1em; }
 
-#ribbon {
+img {
   position: absolute;
   top: 0;
-  right: 0; }
-
-img {
+  right: 0;
   border: 0; }
 
-#footer {
+div {
   clear: both;
   text-align: center;
   font-size: .8em;
