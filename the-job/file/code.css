@@ -1,0 +1,167 @@
+/* 
+Latin Modern Mono Prop 
+http://www.gust.org.pl/projects/e-foundry/latin-modern 
+Foundry: Gust E Foundry, http://www.gust.org.pl/projects-1/e-foundry 
+Contributors: B. Jackowski and Rafael Ferran 
+License: GUST Font License, http://www.gust.org.pl/fonts/licenses/GUST-FONT-LICENSE.txt 
+*/
+
+@font-face {
+	font-family: 'Latin Modern Mono Prop kRB';
+	src: url('fonts/latin-modern-mono-prop-kRB.eot?') format('eot'), url('fonts/latin-modern-mono-prop-kRB.ttf') format('truetype'), url('fonts/latin-modern-mono-prop-kRB.woff') format('woff');
+}
+/* 
+Latin Modern Sans Quote 
+http://www.gust.org.pl/projects/e-foundry/latin-modern 
+Foundry: Gust E Foundry, http://www.gust.org.pl/projects-1/e-foundry 
+Contributors: B. Jackowski and Janusz Marian Nowacki 
+License: GUST Font License, http://www.gust.org.pl/fonts/licenses/GUST-FONT-LICENSE.txt 
+*/
+
+@font-face {
+	font-family: 'Latin Modern Sans Quote kRB';
+	src: url('fonts/latin-modern-sans-quote-kRB.eot?') format('eot'), url('fonts/latin-modern-sans-quote-kRB.ttf') format('truetype'), url('fonts/latin-modern-sans-quote-kRB.woff') format('woff'); 
+}
+/* 
+Latin Modern Sans Quote Oblique 
+http://www.gust.org.pl/projects/e-foundry/latin-modern 
+Foundry: Gust E Foundry, http://www.gust.org.pl/projects-1/e-foundry 
+Contributors: B. Jackowski and Janusz Marian Nowacki 
+License: GUST Font License, http://www.gust.org.pl/fonts/licenses/GUST-FONT-LICENSE.txt 
+*/
+
+@font-face {
+	font-family: 'Latin Modern Sans Quote kRB';
+	font-style: italic;	
+	src: url('fonts/latin-modern-sans-quote-oblique-kRB.eot?') format('eot'), url('fonts/latin-modern-sans-quote-oblique-kRB.ttf') format('truetype'), url('fonts/latin-modern-sans-quote-oblique-kRB.woff') format('woff');
+}
+/* 
+Latin Modern Sans Quote Bold 
+http://www.gust.org.pl/projects/e-foundry/latin-modern 
+Foundry: Gust E Foundry, http://www.gust.org.pl/projects-1/e-foundry 
+Contributors: B. Jackowski and Janusz Marian Nowacki 
+License: GUST Font License, http://www.gust.org.pl/fonts/licenses/GUST-FONT-LICENSE.txt 
+*/
+
+@font-face {
+	font-family: 'Latin Modern Sans Quote kRB';
+	font-weight: bold;	
+	src: url('fonts/latin-modern-sans-quote-bold-kRB.eot?') format('eot'), url('fonts/latin-modern-sans-quote-bold-kRB.ttf') format('truetype'), url('fonts/latin-modern-sans-quote-bold-kRB.woff') format('woff');
+}
+
+/* 
+Kontrapunkt Bold 
+http://kontrapunkt.com/ 
+Foundry: Kontrapunkt, http://www.kontrapunkt.com 
+Contributors: Bo Linnemann 
+License: Freeware, http://en.wikipedia.org/wiki/Freeware 
+*/
+
+@font-face {
+	font-family: 'Kontrapunkt kRB';
+	font-weight: bold;	
+	src: url('fonts/kontrapunkt-bold-kRB.eot?') format('eot'), url('fonts/kontrapunkt-bold-kRB.ttf') format('truetype'), url('fonts/kontrapunkt-bold-kRB.woff') format('woff'); 
+}
+
+
+/*
+	'Latin Modern Mono Prop kRB';
+	'Latin Modern Sans Quote kRB'; normal, italic, bold
+	'Kontrapunkt kRB'; font-weight: bold;	
+
+  blue:
+  color: #439AA1;
+
+  tan: 
+  color: #E8E3D3;
+
+  brown:
+  color: #78643A;
+*/
+
+
+
+body {
+	font-family: 'Latin Modern Sans Quote kRB';
+	font-style: normal;
+	font-weight: normal;
+  color: #78643A;
+  background-color: #fff;
+}
+
+html body .slide {
+  background-color: #d9cfb2;
+}
+
+h1, h3 {
+	font-family: 'Kontrapunkt kRB';
+	font-style: normal;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: 'Latin Modern Mono Prop kRB';	
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*
+  blue:
+  color: #439AA1;
+
+  tan: 
+  color: #E8E3D3;
+
+  brown:
+  color: #78643A;
+  */
+h1 {
+	text-shadow: 3px 2px #439AA1;
+}
+
+h2 {
+  color: #439AA1;
+	text-shadow: 1px 1px -1px #78643A;
+}
+
+h3 {
+	text-shadow: 1px 1px -1px #439AA1;
+}
+
+.slide ol {
+  padding-left: 200px;
+  padding-right: 100px;
+}
+
+.slide ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+	color: #002C34;
+	text-decoration: none;
+}
+
+.ul {
+  text-decoration: underline;
+}
+
+.giantlist ul {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
+.content.giantlist > ul > li {
+  padding: 0;
+  margin-left: 20px;
+}
+
+
+#footer {
+  font-family: 'Kontrapunkt kRB';
+  font-weight: bold;
+  background-color: #78643A;
+  color: #fff;
+}

@@ -1,1 +1,1 @@
-rvm use 1.9.2@listrophy.github.com
+rvm use 1.9.3@listrophy.github.com --create
