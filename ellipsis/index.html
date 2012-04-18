@@ -16,6 +16,15 @@
       }
     </style>
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <style type="text/css">
+      pre.blk { font-family: monospace; color: #dadada; background-color: #000000; }
+      .blk .lnr { color: #ffffff; background-color: #080808; }
+      .blk .String { color: #5fff00; }
+      .blk .Constant { color: #008787; }
+      .blk .Identifier { color: #ffd700; }
+      .blk .Type { color: #d7d787; }
+      -->
+    </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -52,6 +61,7 @@
             <p>Ellipsis is a little language that compiles into Brainf&amp;*%. To write an Ellipsis program, enter <code>n</code> ellipses into your source file. Then, convert <code>n</code> into its big-endian octal representation&hellip; call this <code>oct</code>. Convert each digit of <code>oct</code> into new characters based on the table to the right.</p>
             <p>Now, just run the result through a standard Brainf&amp;*% interpreter!</p>
             <p>A sample program (standard file extension is "..") that beeps is simply 4,793,492 ellipsis characters!</p>
+            <p>A reference implementation is available in ruby:</p>
           </div>
           <table class="span4 table table-striped table-bordered table-condensed">
             <thead>
@@ -71,6 +81,11 @@
               <tr><td>7</td><td>]</td></tr>
             </tbody>
           </table>
+        </div>
+        <div class="row">
+          <pre class="blk span10">
+(<span class="Type">File</span>.size(<span class="Identifier">ARGV</span>[<span class="Constant">0</span>])/<span class="Constant">3</span>).to_s(<span class="Constant">8</span>).chars.map{|<span class="Identifier">x</span>| print <span class="String">%w(</span><span class="String">&gt; &lt; + - . , [ ]</span><span class="String">)</span>[x.to_i]}
+          </pre>
         </div>
 
       </div>
